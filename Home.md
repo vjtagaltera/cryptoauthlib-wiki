@@ -1,5 +1,3 @@
-# Cryptoauthlib Wiki
-
 ### Currently supported devices
 
 - [ATSHA204A](http://www.microchip.com/ATSHA204A)
