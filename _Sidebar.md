@@ -8,4 +8,4 @@
    4. [[OpenSSL Reference]]
 4. [[Hardware Abstraction Layer]]
    1. [[Udev Rules]]
-5. [[ATECC608A-MAHTN CryptoAuth Device]]
+5. [[Secure Element for LoRaWAN TTN Join Server]]
