@@ -9,3 +9,5 @@
 4. [[Hardware Abstraction Layer]]
    1. [[Udev Rules]]
 5. [[Secure Element for LoRaWAN TTN Join Server]]
+   1. [[TTN Overview]]
+   2. [[TTN Getting Started]]
