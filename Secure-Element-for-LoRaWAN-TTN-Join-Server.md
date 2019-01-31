@@ -5,4 +5,4 @@ Microchip's ATECC608A-MAHTN Secure Element has been specially pre-provisioned wi
 Check out these pages for more information:
 
 1. [Overview](TTN-Overview)
-2. [Getting Started Guide](TTN-Getting-Started]
+2. [Getting Started Guide](TTN-Getting-Started)
