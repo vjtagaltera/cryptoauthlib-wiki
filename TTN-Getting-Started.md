@@ -6,11 +6,11 @@ This guide will direct you through the process of getting started with developin
 
 This guide describes the following: 
 
-1. [Purchasing the pre-provisioned ATECC608A-MAHTN Secure Element](TTN-Getting-Started#atecc608a-mahtn-pre-provisioned-secure-element-with-lorawan-ttn-join-server-getting-started-guide_purchasing-the-pre-provisioned-atecc608a-mahtn-secure-element)
-2. [Claim pre-provisioned Secure Elements into your TTN account](TTN-Getting-Started#atecc608a-mahtn-pre-provisioned-secure-element-with-lorawan-ttn-join-server-getting-started-guide_claim-pre-provisioned-secure-elements-into-your-ttn-account)
-3. [Hardware Development Tools](TTN-Getting-Started#atecc608a-mahtn-pre-provisioned-secure-element-with-lorawan-ttn-join-server-getting-started-guide_hardware-development-tools)
-4. [Software packages and code example](TTN-Getting-Started#atecc608a-mahtn-pre-provisioned-secure-element-with-lorawan-ttn-join-server-getting-started-guide_software-packages-and-code-example)
-5. [Next steps - Prototype to production transition](TTN-Getting-Started#atecc608a-mahtn-pre-provisioned-secure-element-with-lorawan-ttn-join-server-getting-started-guide_next-steps-prototype-to-production-transition)
+1. [Purchasing the pre-provisioned ATECC608A-MAHTN Secure Element](TTN-Getting-Started#purchasing-the-pre-provisioned-atecc608a-mahtn-secure-element)
+2. [Claim pre-provisioned Secure Elements into your TTN account](TTN-Getting-Started#claim-pre-provisioned-secure-elements-into-your-ttn-account)
+3. [Hardware Development Tools](TTN-Getting-Started#hardware-development-tools)
+4. [Software packages and code example](TTN-Getting-Started#software-packages-and-code-example)
+5. [Next steps - Prototype to production transition](TTN-Getting-Started#next-steps-prototype-to-production-transition)
 
 ## Purchasing the pre-provisioned ATECC608A-MAHTN Secure Element
 
