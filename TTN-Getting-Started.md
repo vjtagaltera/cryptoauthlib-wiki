@@ -10,7 +10,8 @@ This guide describes the following:
 2. [Claim pre-provisioned Secure Elements into your TTN account](TTN-Getting-Started#claim-pre-provisioned-secure-elements-into-your-ttn-account)
 3. [Hardware Development Tools](TTN-Getting-Started#hardware-development-tools)
 4. [Software packages and code example](TTN-Getting-Started#software-packages-and-code-example)
-5. [Next steps - Prototype to production transition](TTN-Getting-Started#next-steps-prototype-to-production-transition)
+5. [Next steps - Prototype to production transition](TTN-Getting-Started#next-steps---prototype-to-production-transition
+)
 
 ## Purchasing the pre-provisioned ATECC608A-MAHTN Secure Element
 
