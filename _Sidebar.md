@@ -11,3 +11,4 @@
 5. [[Secure Element for LoRaWAN TTN Join Server]]
    1. [[TTN Overview]]
    2. [[TTN Getting Started]]
+6. [[OpenSSL and ATECC Sign Verify]]
