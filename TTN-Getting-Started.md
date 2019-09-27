@@ -1,4 +1,4 @@
-# ATECC608A-MAHTN Pre-Provisioned secure element with LoRaWAN™ TTN Join Server Getting Started Guide
+# ATECC608A-TNGLORA Pre-Provisioned secure element with LoRaWAN™ TTN Join Server Getting Started Guide
 
 ## Introduction
 
@@ -6,26 +6,26 @@ This guide will direct you through the process of getting started with developin
 
 This guide describes the following: 
 
-1. [Purchasing the pre-provisioned ATECC608A-MAHTN Secure Element](TTN-Getting-Started#purchasing-the-pre-provisioned-atecc608a-mahtn-secure-element)
+1. [Purchasing the pre-provisioned ATECC608A-TNGLORA Secure Element](TTN-Getting-Started#purchasing-the-pre-provisioned-atecc608a-tnglora-secure-element)
 2. [Claim pre-provisioned Secure Elements into your TTN account](TTN-Getting-Started#claim-pre-provisioned-secure-elements-into-your-ttn-account)
 3. [Hardware Development Tools](TTN-Getting-Started#hardware-development-tools)
 4. [Software packages and code example](TTN-Getting-Started#software-packages-and-code-example)
 5. [Next steps - Prototype to production transition](TTN-Getting-Started#next-steps---prototype-to-production-transition
 )
 
-## Purchasing the pre-provisioned ATECC608A-MAHTN Secure Element
+## Purchasing the pre-provisioned ATECC608A-TNGLORA Secure Element
 
-The ATECC608A-MAHTN Secure Element for use with The Things Network Join Sevice can be purchased through Microchip Direct.  Microchip takes care of all the headache behind securely provisioning unique keys into each secure element - all you have to do is purchase the part, install it in your LoRaWAN end-device, and allow it to connect to The Things Network Join server.
+The ATECC608A-TNGLORA Secure Element for use with The Things Network Join Service can be purchased through Microchip Direct.  Microchip takes care of all the headache behind securely provisioning unique keys into each secure element - all you have to do is purchase the part, install it in your LoRaWAN end-device, and allow it to connect to The Things Network Join server.
 
-[<center><img src="ttn/images/ecc_order.png" alt="**Get your Secure Elements here!**" /></center>](https://www.microchipdirect.com/product/ATECC608A?keywords=ATECC608A-MAHTN-T)
+[<center><img src="ttn/images/ecc_order.png" alt="**Get your Secure Elements here!**" /></center>](https://www.microchip.com/wwwproducts/en/ATECC608A-TNGLORA)
 
 ## Claim pre-provisioned Secure Elements into your TTN account
 
-Once your ATECC608A-MAHTN Secure Elements ship from Microchip Direct, you will be provided with a link to download a Device Manifest file representing your specific pre-provisioned Secure Element chips.
+Once your ATECC608A-TNGLORA Secure Elements ship from Microchip Direct, you will be provided with a link to download a Device Manifest file representing your specific pre-provisioned Secure Element chips.
 
 <img src="ttn/images/downloadjson.png" />
 
-Next, you will upload this Device Manifest file into your The Thing Networks account console.  This will claim your batch of ATECC608A-MAHTN Secure Elements within The Things Network Join server and automatically associate the secret *AppKey* and *NwkKey* keys with your account.
+Next, you will upload this Device Manifest file into your The Thing Networks account console.  This will claim your batch of ATECC608A-TNGLORA Secure Elements within The Things Network Join server and automatically associate the secret *AppKey* and *NwkKey* keys with your account.
 
 This is how the claiming process goes...
 
@@ -33,7 +33,7 @@ This is how the claiming process goes...
 
 [<center><img src="ttn/images/clicktoclaim.png" /></center>](http://ttn.fyi/joinserver/microchip)
 
-<img src="ttn/images/warning.png" width=50 align="bottom">**\*Note that your Device Manifest file will not be ready for download immediately after purchase.  Instead, the file will be available once your ATECC608A-MAHTN Secure Element devices ship.**
+<img src="ttn/images/warning.png" width=50 align="bottom">**\*Note that your Device Manifest file will not be ready for download immediately after purchase.  Instead, the file will be available once your ATECC608A-TNGLORA Secure Element devices ship.**
 
 After you successfully claim your devices, you can check the available devices in your TTN account under registered devices list.  This ensures that your devices is properly registered and ready to talk to the cloud.
 
@@ -52,13 +52,13 @@ Once the Gateway is activated, you can manage the rest of the settings through [
 
 
 
-### Secure Element - ATECC608A-MAHTN
+### Secure Element - ATECC608A-TNGLORA
 
-Your LoRaWAN end-point needs an identity, and the security of that identity is paramount!  Fortunately, the ATECC608A-MAHTN pre-provisioned part contains all the information necessary to allow your LoRaWAN end-point to securely connect with The Things Network's Join Service.  You can think of the chip like a SIM card for a mobile phone.  For development, and this guide, you will use an AT88CKSCKTUDFN-XPRO socket board to let the SAMR34 XPlained Pro board connect to The Things Network LoRaWAN Join server.  Here is how to set up the hardware.
+Your LoRaWAN end-point needs an identity, and the security of that identity is paramount!  Fortunately, the ATECC608A-TNGLORA pre-provisioned part contains all the information necessary to allow your LoRaWAN end-point to securely connect with The Things Network's Join Service.  You can think of the chip like a SIM card for a mobile phone.  For development, and this guide, you will use an AT88CKSCKTUDFN-XPRO socket board to let the SAMR34 XPlained Pro board connect to The Things Network LoRaWAN Join server.  Here is how to set up the hardware.
 
 #### The ATECC88CKSCKTUDFN-XPro Board
 
-This board connects the ATECC608A-MAHTN part to the SAMR34 XPlained Pro board.  It is great for prototyping your LoRaWAN application because it gives you the ability to swap out the ATECC608A device so your prototype can take on different identities.  You can also proble the I<sup>2</sup>C lines with a logic analyzer to debug possible problems.
+This board connects the ATECC608A-TNGLORA part to the SAMR34 XPlained Pro board.  It is great for prototyping your LoRaWAN application because it gives you the ability to swap out the ATECC608A device so your prototype can take on different identities.  You can also probe the I<sup>2</sup>C lines with a logic analyzer to debug possible problems.
 
 The board needs to be configured for I<sup>2</sup>C communication.  Do this by setting the DIP switches to these settings:
 
@@ -73,11 +73,11 @@ DIP Switch Number
 * 7: **Off**
 * 8: **Off**
 
-Next, you should make sure that the ATECC608A-MAHTN has been properly seated in the AT88CKSCKTUDFN-XPro Board's UDFN ZIF socket.  With the AT88CKSCKTUDFN-XPro board horizontal, with the XPro Header facing the left, the Pin 1 location will be located on the bottom-left of the clamshell socket.  It is indicated by a tiny triangle just to the right of the Jumper (JPP1).
+Next, you should make sure that the ATECC608A-TNGLORA has been properly seated in the AT88CKSCKTUDFN-XPro Board's UDFN ZIF socket.  With the AT88CKSCKTUDFN-XPro board horizontal, with the XPro Header facing the left, the Pin 1 location will be located on the bottom-left of the clamshell socket.  It is indicated by a tiny triangle just to the right of the Jumper (JPP1).
 
 <img src="ttn/images/ecc_pin1.png" />
 
-ATECC608A-MAHTN correctly seated into the AT88CKSCKTUDFN-XPro socket...
+ATECC608A-TNGLORA correctly seated into the AT88CKSCKTUDFN-XPro socket...
 
 <img src="ttn/images/ecc_seated.png" />
 
@@ -91,7 +91,7 @@ This FCC, ISED and RED certified board is not only an evaluation platform but al
 
 This kit is supported by the Atmel Studio, an integrated development platform, which provides predefined application examples. The kit also provides easy access to various features of the ATSAMR34J18B device and offers additional peripherals to extend the features of the board and ease the development of custom designs.
 
-Once you have correctly seated the ATECC608A-MAHTN part in the AT88CKSCKTUDFN-XPro socket, attach the board to the SAMR34 board, on the EXT3 header.  Next, attach a USB cable to SAMR34 XPlained Pro board's EDBG micro-B port on the right.
+Once you have correctly seated the ATECC608A-TNGLORA part in the AT88CKSCKTUDFN-XPro socket, attach the board to the SAMR34 board, on the EXT3 header.  Next, attach a USB cable to SAMR34 XPlained Pro board's EDBG micro-B port on the right.
 
 Here's how your board should look...
 
@@ -99,17 +99,17 @@ Here's how your board should look...
 
 #### Other Kits
 
-Other hardware kits can be used with the ATECC608A-MAHTN Secure Element to connect with TTN's Join server.  ARM's MBED OS is used on MBED enabled platforms, such as the ATSAML21 XPlained Pro board, paired with a SX1276 LoRa radio board.</font>
+Other hardware kits can be used with the ATECC608A-TNGLORA Secure Element to connect with TTN's Join server.  ARM's MBED OS is used on MBED enabled platforms, such as the ATSAML21 XPlained Pro board, paired with a SX1276 LoRa radio board.</font>
 
 [ATSAML21-XPRO-B](https://os.mbed.com/platforms/SAML21-XPRO/)
 
 * SX1276 LoRa radio must be connected to **EXT1** (manually wired)
-* AT88CKSCKTUDFN-XPro board + ATECC608A-MAHTN must be connected to **EXT3**
+* AT88CKSCKTUDFN-XPro board + ATECC608A-TNGLORA must be connected to **EXT3**
 
 
 ## Software packages and code example
 
-The secure element end-to-end security is supported by more than just Microchip's LoRaWAN stack.  So far, support for the ATECC608A-MAHTN Secure Element has been added to a custom stack for the SAMR34 series of SiP devices, and for MBED enabled devices like the SAML21 that can run MBED OS.
+The secure element end-to-end security is supported by more than just Microchip's LoRaWAN stack.  So far, support for the ATECC608A-TNGLORA Secure Element has been added to a custom stack for the SAMR34 series of SiP devices, and for MBED enabled devices like the SAML21 that can run MBED OS.
 
 ### Microchip LoRaWAN Stack on SAMR34
 
@@ -177,13 +177,13 @@ If your LoRaWAN end-device was registered to The Things Network, you can validat
 Notice that the raw bytes of the Payload and DevAddr of the message match what is shown in UART console.
 
 ### MBED OS LoRaWAN Stack
-Support for the ATECC608A-MAHTN Secure Element in the MBED OS LoRaWAN stack has been developed and brought to the MBED enabled ATSAML21-XPro-B board.  The source for this project can be [cloned from this branch of MBED OS](https://github.com/ARMmbed/mbed-os-example-lorawan/tree/ATECC608_PoC).
+Support for the ATECC608A-TNGLORA Secure Element in the MBED OS LoRaWAN stack has been developed and brought to the MBED enabled ATSAML21-XPro-B board.  The source for this project can be [cloned from this branch of MBED OS](https://github.com/ARMmbed/mbed-os-example-lorawan/tree/ATECC608_PoC).
 
 The MBED OS implementation of the LoRaWAN stack for the SAMR34 is not currently supported, but an implementation should be made available shortly.
 
 ## Next steps - Prototype to production transition
 
-Once you have your prototype working just the way you want, the next step is to transition to production.  Moving to produciton is as simple as ordering the required number of parts - there are no extra steps needed in provisioning large scale numbers of devices.  There are no changes in the Secure Element claiming process.
+Once you have your prototype working just the way you want, the next step is to transition to production.  Moving to production is as simple as ordering the required number of parts - there are no extra steps needed in provisioning large scale numbers of devices.  There are no changes in the Secure Element claiming process.
 
 ## Support
 
