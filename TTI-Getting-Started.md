@@ -6,47 +6,47 @@ This guide will direct you through the process of getting started with developin
 
 This guide describes the following: 
 
-1. [Purchasing the pre-provisioned ATECC608A-TNGLORA Secure Element](TTN-Getting-Started#purchasing-the-pre-provisioned-atecc608a-tnglora-secure-element)
-2. [Claim pre-provisioned Secure Elements into your TTN account](TTN-Getting-Started#claim-pre-provisioned-secure-elements-into-your-ttn-account)
-3. [Hardware Development Tools](TTN-Getting-Started#hardware-development-tools)
-4. [Software packages and code example](TTN-Getting-Started#software-packages-and-code-example)
-5. [Next steps - Prototype to production transition](TTN-Getting-Started#next-steps---prototype-to-production-transition
+1. [Purchasing the pre-provisioned ATECC608A-TNGLORA Secure Element](TTI-Getting-Started#purchasing-the-pre-provisioned-atecc608a-tnglora-secure-element)
+2. [Claim pre-provisioned Secure Elements into your TTI account](TTI-Getting-Started#claim-pre-provisioned-secure-elements-into-your-ttn-account)
+3. [Hardware Development Tools](TTI-Getting-Started#hardware-development-tools)
+4. [Software packages and code example](TTI-Getting-Started#software-packages-and-code-example)
+5. [Next steps - Prototype to production transition](TTI-Getting-Started#next-steps---prototype-to-production-transition
 )
 
 ## Purchasing the pre-provisioned ATECC608A-TNGLORA Secure Element
 
-The ATECC608A-TNGLORA Secure Element for use with The Things Network Join Service can be purchased through Microchip Direct.  Microchip takes care of all the headache behind securely provisioning unique keys into each secure element - all you have to do is purchase the part, install it in your LoRaWAN end-device, and allow it to connect to The Things Network Join server.
+The ATECC608A-TNGLORA Secure Element for use with The Things Industries Join Service can be purchased through Microchip Direct.  Microchip takes care of all the headache behind securely provisioning unique keys into each secure element - all you have to do is purchase the part, install it in your LoRaWAN end-device, and allow it to connect to The Things Industries Join server.
 
 [<center><img src="ttn/images/ecc_order.png" alt="**Get your Secure Elements here!**" /></center>](https://www.microchip.com/wwwproducts/en/ATECC608A-TNGLORA)
 
-## Claim pre-provisioned Secure Elements into your TTN account
+## Claim pre-provisioned Secure Elements into your TTI account
 
 Once your ATECC608A-TNGLORA Secure Elements ship from Microchip Direct, you will be provided with a link to download a Device Manifest file representing your specific pre-provisioned Secure Element chips.
 
 <img src="ttn/images/downloadjson.png" />
 
-Next, you will upload this Device Manifest file into your The Thing Networks account console.  This will claim your batch of ATECC608A-TNGLORA Secure Elements within The Things Network Join server and automatically associate the secret *AppKey* and *NwkKey* keys with your account.
+Next, you will upload this Device Manifest file into your The Thing Industries account console.  This will claim your batch of ATECC608A-TNGLORA Secure Elements within The Things Industries Join server and automatically associate the secret *AppKey* and *NwkKey* keys with your account.
 
 This is how the claiming process goes...
 
 <img src="ttn/images/provisioning_flow.png" />
 
-[<center><img src="ttn/images/clicktoclaim.png" /></center>](http://ttn.fyi/joinserver/microchip)
+[<center><img src="ttn/images/clicktoclaim.png" /></center>](https://www.thethingsindustries.com/technology/security-solution/)
 
 <img src="ttn/images/warning.png" width=50 align="bottom">**\*Note that your Device Manifest file will not be ready for download immediately after purchase.  Instead, the file will be available once your ATECC608A-TNGLORA Secure Element devices ship.**
 
-After you successfully claim your devices, you can check the available devices in your TTN account under registered devices list.  This ensures that your devices is properly registered and ready to talk to the cloud.
+After you successfully claim your devices, you can check the available devices in your TTI account under registered devices list.  This ensures that your devices is properly registered and ready to talk to the cloud.
 
 ## Hardware Development Tools
 
 ### LoRaWAN Gateway
-You will need a supported LoRaWAN gateway to get packets from your LoRaWAN end-point to The Things Network platform.  There are many [commercially available gateways](https://www.thethingsnetwork.org/docs/gateways/start/list.html), or you can [build your own with a Raspberry Pi](https://www.thethingsnetwork.org/docs/gateways/start/build.html) and some additional hardware.  **This guide will use [The Things Gateway](https://www.thethingsnetwork.org/docs/gateways/gateway/)**.
+You will need a supported LoRaWAN gateway to get packets from your LoRaWAN end-point to The Things Industries platform.  There are many [commercially available gateways](https://www.thethingsnetwork.org/docs/gateways/start/list.html), or you can [build your own with a Raspberry Pi](https://www.thethingsnetwork.org/docs/gateways/start/build.html) and some additional hardware.  **This guide will use [The Things Gateway](https://www.thethingsnetwork.org/docs/gateways/gateway/)**.
 
 <img src="ttn/images/gateway.png" />
 
 #### Gateway Initialization and Registration
 
-The Things Network provides a very smooth process to activate your Gateway.  [Activate your Gateway here](https://activate.thethingsnetwork.org/)
+The Things Industries provides a very smooth process to activate your Gateway.  [Activate your Gateway here](https://activate.thethingsnetwork.org/)
 
 Once the Gateway is activated, you can manage the rest of the settings through [The Things Network Console](https://console.thethingsnetwork.org/).
 
@@ -54,7 +54,7 @@ Once the Gateway is activated, you can manage the rest of the settings through [
 
 ### Secure Element - ATECC608A-TNGLORA
 
-Your LoRaWAN end-point needs an identity, and the security of that identity is paramount!  Fortunately, the ATECC608A-TNGLORA pre-provisioned part contains all the information necessary to allow your LoRaWAN end-point to securely connect with The Things Network's Join Service.  You can think of the chip like a SIM card for a mobile phone.  For development, and this guide, you will use an AT88CKSCKTUDFN-XPRO socket board to let the SAMR34 XPlained Pro board connect to The Things Network LoRaWAN Join server.  Here is how to set up the hardware.
+Your LoRaWAN end-point needs an identity, and the security of that identity is paramount!  Fortunately, the ATECC608A-TNGLORA pre-provisioned part contains all the information necessary to allow your LoRaWAN end-point to securely connect with The Things Industries Join Service.  You can think of the chip like a SIM card for a mobile phone.  For development, and this guide, you will use an AT88CKSCKTUDFN-XPRO socket board to let the SAMR34 XPlained Pro board connect to The Things Industries LoRaWAN Join server.  Here is how to set up the hardware.
 
 #### The ATECC88CKSCKTUDFN-XPro Board
 
@@ -99,7 +99,7 @@ Here's how your board should look...
 
 #### Other Kits
 
-Other hardware kits can be used with the ATECC608A-TNGLORA Secure Element to connect with TTN's Join server.  ARM's MBED OS is used on MBED enabled platforms, such as the ATSAML21 XPlained Pro board, paired with a SX1276 LoRa radio board.</font>
+Other hardware kits can be used with the ATECC608A-TNGLORA Secure Element to connect with TTI's Join server.  ARM's MBED OS is used on MBED enabled platforms, such as the ATSAML21 XPlained Pro board, paired with a SX1276 LoRa radio board.</font>
 
 [ATSAML21-XPRO-B](https://os.mbed.com/platforms/SAML21-XPRO/)
 
@@ -170,7 +170,7 @@ Transmission Success
 *************************************************
 ```
 
-If your LoRaWAN end-device was registered to The Things Network, you can validate that the data received by TTN's cloud system by viewing the raw data on your TTN console page, under the **Application Data** area.
+If your LoRaWAN end-device was registered to The Things Industries, you can validate that the data received by TTI's cloud system by viewing the raw data on your TTI console page, under the **Application Data** area.
 
 <img src="ttn/images/rx_data_ttn.png" />
 
