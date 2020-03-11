@@ -1,4 +1,4 @@
-# ATECC608A-TNGLORA Pre-Provisioned secure element with LoRaWAN™ TTN Join Server Getting Started Guide
+# ATECC608A-TNGLORA Pre-Provisioned secure element with LoRaWAN™ TTI Join Server Getting Started Guide
 
 ## Introduction
 
