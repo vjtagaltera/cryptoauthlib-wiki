@@ -8,7 +8,7 @@
    4. [[OpenSSL Reference]]
 4. [[Hardware Abstraction Layer]]
    1. [[Udev Rules]]
-5. [[Secure Element for LoRaWAN TTN Join Server]]
+5. [[Secure Element for LoRaWAN TTI Join Server]]
    1. [[TTI Overview]]
    2. [[TTI Getting Started]]
 6. [[OpenSSL and ATECC Sign Verify]]
