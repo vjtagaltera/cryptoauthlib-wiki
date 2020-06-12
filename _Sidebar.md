@@ -2,6 +2,8 @@
 2. [[Architecture]]
    1. [[Upgrading to v3.2]]
    2. [[Device Support]]
+   3. [[Configuration]]
+   4. [[Testing]]
 3. [[Applications]]
    1. [[Greengrass HSI]]
 4. [[PKCS11]]
