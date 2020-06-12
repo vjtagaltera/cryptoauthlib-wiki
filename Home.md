@@ -9,7 +9,7 @@
 ATECC108A & ATECC508A are not recommended for new designs but will continue to be
 supported by the library.
 
-TA100 support is a separate component that can be obtained by requesting it through the mySupport portal. For details on the mySupport Portal or how to use it please see the [instructions for using the mySupport portal](https://microchip.secure.force.com/microchipknowledge/articles/en_US/FAQ/How-to-submit-a-case)
+TA100 support is a separate component that can be obtained by requesting it through the myMicrochip Support portal. For details on the myMicrochip Support Portal or how to use it please see [How to Submit a Case](https://microchipsupport.force.com/s/article/How-to-submit-a-case)
 
 ### API Documentation 
 Documentation for the cryptoauthlib api is hosted seperately from this wiki at
