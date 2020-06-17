@@ -21,7 +21,7 @@ cmake --build .
 ### CMake Configuration Options
 
 #### Global Options
-* BUILD_TESTS (default off) - Create the Test Application (disables ATCA_BUILD_SHARED_LIBS)
+* BUILD_TESTS (default off) - Create the Test Application
 * ATCA_PRINTF (default off) - Enable Debug print statements in library
 * ATCA_BUILD_SHARED_LIBS (default on) - Builds cryptoauthlib as a shared library (.dll/.so)
 
