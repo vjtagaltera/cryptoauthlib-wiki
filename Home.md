@@ -13,7 +13,7 @@ TA100 support is a separate component that can be obtained by requesting it thro
 
 ### API Documentation 
 Documentation for the cryptoauthlib api is hosted seperately from this wiki at
-https://microchiptech.github.io/cryptoauthlib/
+https://microchiptech.github.io/cryptoauthlib/index.html
 
 ### Cryptoauthentication Kits:
 
