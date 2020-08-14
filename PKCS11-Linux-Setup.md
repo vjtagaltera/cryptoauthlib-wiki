@@ -51,9 +51,9 @@ provider. These instructions are for commonly available Linux systems with packa
     $ yum install libudev-devel
     ```
 
-    * Get the latest version of cryptoauthlib with PKCS11 support 
+    * Get the latest version of cryptoauthlib 
     ```Shell
-    $ git clone --single-branch -b pkcs11 https://github.com/MicrochipTech/cryptoauthlib
+    $ git clone https://github.com/MicrochipTech/cryptoauthlib
     ```
 
 * Rerun the build configuration tools:
