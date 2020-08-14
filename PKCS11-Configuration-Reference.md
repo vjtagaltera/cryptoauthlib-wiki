@@ -1,4 +1,4 @@
-When building the PKCS11 library several configuration options are available in [pkcs11_config.h.in](https://github.com/MicrochipTech/cryptoauthlib/blob/master/lib/pkcs11/pkcs11_config.h)
+When building the PKCS11 library several configuration options are available in [pkcs11_config.h](https://github.com/MicrochipTech/cryptoauthlib/blob/master/lib/pkcs11/pkcs11_config.h.in)
 
 - **PKCS11_DEBUG_ENABLE** (Default: disabled)
 
